@@ -12,7 +12,6 @@ while True:
     if user_input not in options:
         continue
     random_number = random.randint(0,2)
-    #Rock is 0, Paper is 1, Scissors is 2
     computer_guess = options[random_number]
     print("Computer picked",computer_guess+".")
 
