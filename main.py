@@ -3,6 +3,7 @@ import random
 
 user_wins  = 0
 computer_wins = 0
+draw_draw = 0
 options = ["rock", "paper", "scissors"]
 
 while True:
@@ -30,16 +31,19 @@ while True:
 
     elif user_input == "rock" and computer_guess == "rock":
         print("Try Again!!!")
+        draw_draw += 1
 
     elif user_input == "paper" and computer_guess == "paper":
         print("Try Again!!!")
+        draw_draw += 1 
 
     elif user_input == "scissors" and computer_guess == "scissors":
         print("Try Again!!!")
+        draw_draw += 1
 
     else:
         print("You Lost!!!")
         computer_wins += 1
 
-print("You won",user_wins,"times!!!\nThe Computer won",computer_wins,"times!!!")
+print("You won",user_wins,"times!!!\nThe Computer won",computer_wins,"times!!!\nYou chose the same",draw_draw,"times!!!")
 print("Goodbye!!!")
