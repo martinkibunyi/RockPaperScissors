@@ -10,6 +10,7 @@ while True:
     if user_input == "q":
         break
     if user_input not in options:
+        print("Enter a valid option!!!)
         continue
     random_number = random.randint(0,2)
     computer_guess = options[random_number]
